@@ -1,0 +1,23 @@
+{
+  "name": "generatemyreadme",
+  "version": "1.0.0",
+  "description": "working on a readme generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TamasPinter/GenerateMyReadme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TamasPinter/GenerateMyReadme/issues"
+  },
+  "homepage": "https://github.com/TamasPinter/GenerateMyReadme#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  }
+}
