@@ -53,3 +53,19 @@ const questions = [
         name: 'questions',
     }
 ]
+
+
+// TODO: Create a function to initialize app and write README file
+function init() {
+    inquirer.prompt(questions)
+    .then((response) => {
+        console.log(response);
+        fs.appendFile('Readme.md', JSON.stringify(response), (err) => {
+            if (err) throw err;
+            console.log('The file has been created!');
+        })
+    })
+}
+
+// Function call to initialize app
+init();
