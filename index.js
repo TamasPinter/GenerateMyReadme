@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
+const markdown = require('./generateMarkdown.js');
 
 //const questions for markdown info
 
@@ -37,7 +38,7 @@ const questions = [
         name: 'contributors',
     },
     {
-        type: 'checkbox',
+        type: 'list',
         message: 'Please select a license for your project',
         choices: ['MIT', 'Apache', 'GPL', 'BSD', 'None'],
         name: 'license',
@@ -60,7 +61,8 @@ function init() {
     inquirer.prompt(questions)
     .then((response) => {
         console.log(response);
-        fs.appendFile('Readme.md', JSON.stringify(response), (err) => {
+        let genMd = markdown(response);
+        fs.appendFile('Readme.md', genMd, (err) => {
             if (err) throw err;
             console.log('The file has been created!');
         })
