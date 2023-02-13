@@ -27,6 +27,9 @@ Once inquirer is installed, through the terminal again, run 'node index.js'. Now
 .
 ![ReadMe Generator](./screenshot.png)
 
+A sample video link can be found here:
+https://drive.google.com/file/d/1J-aEl_1VGtkuBwpV1xPtDO4KTc4iqvON/view?usp=sharing
+
 ## Contributors
 This repo is solely my own creation, Tamas Pinter
 
